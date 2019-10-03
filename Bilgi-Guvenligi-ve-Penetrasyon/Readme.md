@@ -1,7 +1,7 @@
 # Bilgi-Guvenligi-ve-Penetrasyon
 
 Aşağıdaki dosyalar Bilgi Güvenliği ve Penetrasyon dersinde kullanılacak Linux işletim sistemi dosyalarıdır.
-Derse gelmeden önce indirip VMware Sanal Makine kurulumunu gerçekleştiriniz. 
+Derse gelmeden önce indirip VMware Sanal Makine ile kurulumunu gerçekleştiriniz. 
 
 WMware programını indirmek için link : 
 https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
