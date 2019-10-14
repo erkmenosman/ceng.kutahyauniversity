@@ -6,11 +6,14 @@ Derse gelmeden önce indirip VMware Sanal Makine ile kurulumunu gerçekleştirin
 WMware programını indirmek için link : 
 https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 
+Oracle VM VirtualBox programını indirmek için link : 
+https://www.virtualbox.org/wiki/Downloads
+
 LİNUX DOSYALARI :
 
 https://fil.email/OzptItIn - KALI LINUX
 
-https://fil.email/CbmZcIET - Kali-Linux-2019.1-vbox-amd64
+https://drive.google.com/open?id=13FTCDQ2IqEGv4qrVdANiB0tb9M2VKYx9 - Kali-Linux-2019.1-vbox-amd64
 
 https://drive.google.com/open?id=10aagDEfHQOEzalEecaP0Et66_ruo2fZy - Metasploitable2-Linux
  
