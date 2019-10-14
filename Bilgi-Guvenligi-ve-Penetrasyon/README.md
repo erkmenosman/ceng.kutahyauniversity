@@ -11,7 +11,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 LİNUX DOSYALARI :
 
-https://fil.email/OzptItIn - KALI LINUX
+https://drive.google.com/open?id=1nN53xhJa5SgQrjC45syIZP47x6LcXB-7 - KALI LINUX
 
 https://drive.google.com/open?id=13FTCDQ2IqEGv4qrVdANiB0tb9M2VKYx9 - Kali-Linux-2019.1-vbox-amd64
 
