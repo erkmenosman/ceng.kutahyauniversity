@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Hesap Makinesi</title>
+<script language="javascript">
+<!-- 
+// ********************************************************************
+
+// *************
+ 
+var rakamekle = false
+var oncekisonuc = 0
+var islem = "="
+function temizle()
+{
+  document.hesapmakinesi.sonuc.value = 0
+  oncekisonuc = 0
+  rakamekle = false
+  islem = "="
+} 
+// http://www.hesapmakinesi.com/
+function hesapla(yeniislem)
+{
+ 
+  var yenisayi = eval(document.hesapmakinesi.sonuc.value)
+ 
+  if (islem == "+") {
+    oncekisonuc = oncekisonuc + yenisayi
+  }
+  else if (islem == "-") {
+    oncekisonuc = oncekisonuc - yenisayi
+  } // http://www.hesapmakinesi.com/
+  else if (islem == "/") {
+    oncekisonuc = oncekisonuc / yenisayi
+  }
+  else if (islem == "*") {
+    oncekisonuc = oncekisonuc * yenisayi
+  }
+  else if (islem == "=") {
+    oncekisonuc = yenisayi
+  }
+  else { 
+    oncekisonuc = yenisayi
+  }
+   
+  document.hesapmakinesi.sonuc.value = oncekisonuc
+  rakamekle = false
+  islem = yeniislem
+} 
+ 
+function sayiyaz(rakam)
+{
+  if (rakamekle) {
+    document.hesapmakinesi.sonuc.value += rakam
+  }// http:hesapmakinesi.com/
+  else {
+    document.hesapmakinesi.sonuc.value = rakam
+    rakamekle = true
+  }
+}
+-->
+</script>
+</head>
+<body>
+<form name="hesapmakinesi">
+<input type="field" name="sonuc" value="0" width=20 align="right">
+<br>
+<input type="button" name="7" value="7" onClick="sayiyaz(7)">
+<input type="button" name="8" value="8" onClick="sayiyaz(8)">
+<input type="button" name="9" value="9" onClick="sayiyaz(9)">
+<br>
+<input type="button" name="4" value="4" onClick="sayiyaz(4)">
+<input type="button" name="5" value="5" onClick="sayiyaz(5)">
+<input type="button" name="6" value="6" onClick="sayiyaz(6)">
+<br>
+<input type="button" name="1" value="1" onClick="sayiyaz(1)">
+<input type="button" name="2" value="2" onClick="sayiyaz(2)">
+<input type="button" name="3" value="3" onClick="sayiyaz(3)">
+<br>
+<input type="button" name="0" value="0" onClick="sayiyaz(0)">
+<input type="button" name="C" value="C" onClick="temizle()">
+<input type="button" name="=" value="=" onClick="hesapla('=')">
+<br>
+<input type="button" name="+" value="+" onClick="hesapla('+')">
+<input type="button" name="-" value="-" onClick="hesapla('-')">
+<input type="button" name="*" value="*" onClick="hesapla('*')">
+<input type="button" name="/" value="/" onClick="hesapla('/')">
+</form>
+</body>
+</html>

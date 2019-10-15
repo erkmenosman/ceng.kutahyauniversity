@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.ad {	font-family: "Comic Sans MS", cursive;
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: 500;
+	color: #300;
+	text-decoration: line-through;
+}
+.soyad {	font-family: "Times New Roman", Times, serif;
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #C00;
+}
+</style>
+</head>
+
+<body>
+<table width="200" height="115" border="1">
+  <tr>
+    <td height="59">ADINIZ     :</td>
+    <td><form id="form5" name="form5" method="post" action="">
+      <label for="ad"></label>
+      <input type="type" class="ad"="text" name="ad" id="ad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >SOYADINIZ :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input type="type" class="soyad" ="text" name="soyad" id="soyad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >ÖĞRENCİ NUMARASI :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input type="type" class="soyad" ="text" name="soyad" id="soyad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >TC NUMARASI :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input maxlength="50" type="type" class="soyad" ="text" name="soyad" id="soyad"
+      />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >rastgele sayı :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input maxlength="50" type="type" class="soyad" ="text" name="soyad" id="soyad"
+      />
+    </form></td>
+  </tr>
+  
+</table>
+<input type="submit" name="kaydet" id="kaydet" value="sayı üret" style="background-color:#F00"  />
+<script>
+  alert(Math.floor(Math.random() * 100000000000000000000000000000000000000000000000001)); // 0 ve 100 arasında sayı üretir.
+</script>
+
+<input type="submit" name="kaydet" id="kaydet" value="karşılaştır" style="background-color:#F00"  />
+</body>
+</html>

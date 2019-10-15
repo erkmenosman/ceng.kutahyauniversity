@@ -1,0 +1,57 @@
+GÜNLÜKPROGRAM
+
+<html>
+<head>
+<title>Bilisimogretmeni.com Tablo Uygulamarý</title>
+</head>
+<body>
+<table border="1" width="400" height="300">
+<tr align="center" BGCOLOR="#FFCCFF">
+<td rowspan="3" >Gün</td>
+<td colspan="3">Seminer</td>
+</tr>
+<tr align="center" BGCOLOR="#AABBFF">
+<td colspan="2">Zaman Çizelgesi</td>
+<td rowspan="2">Baþlýk</td>
+</tr><!-- www.bilisimogretmeni.com -->
+<tr align="center" BGCOLOR="#1133FF">
+<td>Baþlama</td>
+<td>Bitiþ</td>
+</tr>
+<tr align="center" BGCOLOR="#CCFFFF">
+<td rowspan="2">Pazartesi</td>
+<td rowspan="2">08:00</td>
+<td rowspan="2">14:00</td>
+<td>Html Temel Komutlarý</td>
+</tr>
+<tr align="center"BGCOLOR="#CCFFFF">
+<td>
+Html Örnek Uygulamalar
+</td>
+</tr>
+<tr align="center" BGCOLOR="#FFFF99">
+<td rowspan="3">
+Salý
+</td><!-- www.bilisimogretmeni.com -->
+<td>08:00</td>
+<td>10:00</td>
+<td>Html Listeleme Etiketleri</td>
+</tr>
+<tr align="center" BGCOLOR="#FFFF99">
+<td>10:00</td>
+<td>12:00</td>
+<td rowspan="2">Listeleme Uygulamalarý</td>
+</tr>
+<tr align="center" BGCOLOR="#FFFF99">
+<td>10:00</td>
+<td>12:00</td>
+</tr>
+<tr align="center" BGCOLOR="#CCFFFF">
+<td >Çarþamba</td>
+<td >08:00</td>
+<td >14:00</td>
+<td>Genel Tekrar, Soru-Cevap</td>
+</tr>
+</table><!-- www.bilisimogretmeni.com -->
+</body>
+</html>

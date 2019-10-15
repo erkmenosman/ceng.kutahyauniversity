@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<style type="text/css">
+.soyad {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #C00;
+}
+.ad {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: 500;
+	color: #300;
+	text-decoration: line-through;
+}
+.adres {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.hobi {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	font-variant: small-caps;
+	color: #CCC;
+	text-decoration: underline;
+	background-color: #000;
+}
+.merv {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 10px;
+}
+</style>
+</head>
+
+<body>
+ 
+<table width="200" height="293" border="1">
+  
+  <tr>
+    <td>ADINIZ     :</td>
+    <td><form id="form5" name="form5" method="post" action="">
+      <label for="ad"></label>
+      <input type class="ad"="text" name="ad" id="ad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td >SOYADINIZ :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input type class="soyad" ="text" name="soyad" id="soyad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td>CİNSİYET :</td>
+    <td><form id="form1" name="form1" method="post" action="">
+      <input type="radio" name="radio" id="erkek" value="erkek" />
+      <label for="erkek">erkek</label>
+       <input type="radio" name="radio" id="kadın" value="kadın" />
+      <label for="kadın">kadın</label>
+    </form></td>
+  </tr>
+  <tr>
+    <td>DOĞUM YILI :</td>
+    <td><form id="form2" name="form2" method="post" action="">
+      <label for="dogum"></label>
+      <input type="text" name="dogum" id="dogum" />
+    </form></td>
+  </tr>
+  <tr>
+    <td>KAN GRUBU :</td>
+    <td><form name="form" id="form">
+      <p>
+        <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+          <option>seçiniz</option>
+          <option>A</option>
+          <option>B</option>
+          <option>AB</option>
+          <option>0</option> 
+           </select></p>
+      <p>RH</p>
+      <p>
+        <select name="jumpMenu" onchange="MM_jumpMenu('parent',this,0)"> 
+       <option>seçiniz</option>
+          <option>+</option>
+          <option>-</option>
+        </select>
+      </p>
+    </form></td>
+  </tr>
+  <tr>
+    <td>ADRES :</td>
+    <td><form id="form3" name="form3" method="post" action="">
+      <label for="adres"></label>
+      <textarea name class="adres"="adres" id="adres" cols="45" rows="5"></textarea>
+    </form></td>
+  </tr>
+  <tr>
+    <td>HOBİLER :</td>
+    <td><form id="form4" name="form4" method="post" action="">
+      <p>
+        <label>
+          <input type="checkbox" name="hobiler" value="yüzme" id="hobiler_0" />
+          yüzme</label>
+        <br />
+        <label>
+          <input type="checkbox" name="hobiler" value="okçuluk" id="hobiler_1" />
+          okçuluk</label>
+        <br />
+        <label>
+          <input type="checkbox" name="hobiler" value="" id="hobiler_2" />
+          motosiklet kullanmak</label>
+        <br />
+        <label>
+          <input type="checkbox" name="hobiler" value="-" id="hobiler_3" />
+          kitap okumak</label>
+        </p>
+      <p>
+        <label for="hobi_devam">Eklemek istediğiniz hobilerinizi yazınız  :</label>
+        <textarea name class="hobi"="hobi_devam" id="hobi_devam" cols="45" rows="5"></textarea>
+<br />
+      </p>
+    </form></td>
+  </tr>
+  <tr>
+    <td>Mail Adresiniz :</td>
+    <td><form id="form7" name="form7" method="post" action="">
+      <label for="mail"></label>
+      <input type="text" name="mail" id="mail" />
+    </form></td>
+    <tr>
+    <td width="100%"><form id="form8" name="form8" method="post" action="">
+      <input type="submit" name="kaydet" id="kaydet" value="KAYDET" style="background-color:#F00"  />
+    </form></td>
+   
+  </tr>
+  </tr>
+</table>
+</body>
+</html>

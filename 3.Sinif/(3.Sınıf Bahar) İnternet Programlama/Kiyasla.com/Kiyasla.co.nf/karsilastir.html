@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="a.css" rel="stylesheet" type="text/css" />
+
+	<title>ÜRÜN KARŞILAŞTIR & EN İYİYİ EN UCUZA AL !1!</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- top Header -->
+		<div id="top-header">
+			<div class="container">
+				<div class="pull-left">
+					<span>Kiyasla.com'a Hoşgeldiniz ! En İyiyi En Ucuza Al</span>
+				</div>
+				<div class="pull-right">
+				</div>
+			</div>
+		</div>
+		<!-- /top Header -->
+
+		<!-- header -->
+		<div id="header">
+			<div class="container">
+				<div class="pull-left">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="#">
+							<img src="./img/logo.png" alt="" onclick="window.location='index.html';">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Search -->
+					<div class="header-search">
+						<form>
+							<input class="input search-input" type="text" placeholder="Ürün adını giriniz...">
+							<select class="input search-categories">
+								<option value="0">KATEGORİLER</option>
+								<option value="1">Elektronik</option>
+								<option value="1">Giyim	</option>
+							</select>
+							<button class="search-btn"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<!-- /Search -->
+				</div>
+				<div class="pull-right">
+					<ul class="header-btns">
+						<!-- Account -->
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-user-o"></i>
+								</div>
+								<strong class="text-uppercase">Hesabım <i class="fa fa-caret-down"></i></strong>
+							</div>
+							<a href="#" class="text-uppercase">Giriş</a> / <a href="#" class="text-uppercase">Üye</a>
+							<ul class="custom-menu">
+								<li><a href="#"><i class="fa fa-user-o"></i> Hesabım</a></li>
+								<li><a href="#"><i class="fa fa-heart-o"></i> Sepetim</a></li>
+								<li><a href="#"><i class="fa fa-exchange"></i> Karşılaştırmalar</a></li>
+								<li><a href="#"><i class="fa fa-check"></i> Çıkış</a></li>
+								<li><a href="#"><i class="fa fa-unlock-alt"></i> Giriş</a></li>
+								<li><a href="#"><i class="fa fa-user-plus"></i> Yeni Üyelik Oluştur</a></li>
+							</ul>	
+						</li>
+						<!-- /Account -->
+<!-- Cart -->
+						<li class="header-cart dropdown default-dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-shopping-cart"></i>
+									<span class="qty">2</span>
+								</div>
+								<strong class="text-uppercase">Sepetim:</strong>
+								<br>
+								<span>₺7.658,00</span>
+							</a>
+							<div class="custom-menu">
+								<div id="shopping-cart">
+									<div class="shopping-cart-list">
+										<div class="product product-widget">
+											<div class="product-thumb">
+												<img src="./img/thumb-product01.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<h3 class="product-price">₺6899,00 <span class="qty">x1</span></h3>
+												<h2 class="product-name"><a href="#">	
+Apple iPhone Xr 3</a></h2>
+											</div>
+											<button class="cancel-btn"><i class="fa fa-trash"></i></button>
+										</div>
+										<div class="product product-widget">
+											<div class="product-thumb">
+												<img src="./img/thumb-product02.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<h3 class="product-price">₺759,00 <span class="qty">x1</span></h3>
+												<h2 class="product-name"><a href="#">Asus ZenFone Live L2</a></h2>
+											</div>
+											<button class="cancel-btn"><i class="fa fa-trash"></i></button>
+										</div>
+									</div>
+									<div class="shopping-cart-btns">
+										<button class="main-btn">Sepetim</button>
+										<button class="primary-btn">Satın Al <i class="fa fa-arrow-circle-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- /Cart -->
+
+						<!-- Mobile nav toggle-->
+						<li class="nav-toggle">
+							<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+						</li>
+						<!-- / Mobile nav toggle -->
+					</ul>
+				</div>
+			</div>
+			<!-- header -->
+		</div>
+		<!-- container -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- NAVIGATION -->
+	<div id="navigation">
+		<!-- container -->
+		<div class="container">
+			<div id="responsive-nav">  
+				<!-- category nav -->
+                
+				<div class="category-nav show-on-click">
+					<span class="category-header">Kategoriler <i class="fa fa-list"></i></span>
+					<ul class="category-list">
+						<li class="dropdown side-dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Elektronik <i class="fa fa-angle-right"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Bilgisayar / Donanım</h3></li>
+											<li><a href="#">Notebook</a></li>
+											<li><a href="#">Monitor</a></li>
+											<li><a href="#">SSD</a></li>
+											<li><a href="#">Tablet</a></li>
+											<li><a href="#">Yazıcı</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Beyaz Eşya</h3></li>
+											<li><a href="#">Buzdolabı</a></li>
+											<li><a href="#">Çamaşır Makinesi</a></li>
+											<li><a href="#">Bulaşık Makinesi</a></li>
+											<li><a href="#">Fırın</a></li>
+											<li><a href="#">Kurutma Makinesi</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Fotoğraf / Kamera</h3></li>
+											<li><a href="#">Drone</a></li>
+											<li><a href="#">Dijital SLR Fotoğraf Makinesi</a></li>
+											<li><a href="#">Objektif</a></li>
+											<li><a href="#">Aksiyon Kamera</a></li>
+											<li><a href="#">Video Kamera</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row hidden-sm hidden-xs">
+									<div class="col-md-12">
+										<hr>
+										<a class="banner banner-1" href="#">
+											<img src="./img/banner05.jpg" alt="">
+											<div class="banner-caption text-center">
+												<h2 class="white-color">TÜM ELEKTRONİK ÜRÜNLERİN</h2>
+												<h3 class="white-color font-weak">EN İYİSİNİ EN UCUZA AL !!!</h3>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Ev, Ofis, Yaşam</a></li>
+						<li class="dropdown side-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Oyun, Film, Kitap, Müzik <i class="fa fa-angle-right"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Oyun</h3></li>
+											<li><a href="#">Oyun Konsolu</a></li>
+											<li><a href="#">Kutulu Oyun</a></li>
+											<li><a href="#">Gamepad</a></li>
+											<li><a href="#">PS4 Oyunu</a></li>
+											<li><a href="#">Direksiyon Seti</a></li>
+										</ul>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Film</h3></li>
+											<li><a href="#">Aksiyon / Macera</a></li>
+											<li><a href="#">Animasyon</a></li>
+											<li><a href="#">Komedi</a></li>
+											<li><a href="#">Korku</a></li>
+											<li><a href="#">Gerilim</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Kitap</h3></li>
+											<li><a href="#">Aile</a></li>
+											<li><a href="#">Akademik</a></li>
+											<li><a href="#">Edebiyat</a></li>
+											<li><a href="#">Eğitim / Ders Kitapları</a></li>
+
+											<li><a href="#">Yemek</a></li>
+										</ul>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Müzik</h3></li>
+											<li><a href="#">Metod, Eğitim Seti</a></li>
+											<li><a href="#">Müzik Albümü</a></li>
+											<li><a href="#">Müzik Enstrümanları</a></li>
+											<li><a href="#">Plak</a></li>
+											<li><a href="#">Müzik Stüdyo Ekipmanları</a></li>
+										</ul>
+									</div>
+									<div class="col-md-4 hidden-sm hidden-xs">
+										<a class="banner banner-2" href="#">
+											<img src="./img/banner04.jpg" alt="">
+											<div class="banner-caption">
+												<h3 class="white-color">Müzik Ürünleri<br>ve Fiyatları...</h3>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Süpermarket</a></li>
+						<li><a href="#">Yapı Market & Oto & Bahçe</a></li>
+						<li class="dropdown side-dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Saat, Giyim, Aksesuar<i class="fa fa-angle-right"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Altın, Takı, Aksesuar</h3></li>
+											<li><a href="#">Altın</a></li>
+											<li><a href="#">Alyans</a></li>
+											<li><a href="#">Halhal, Piercing, Hızma </a></li>
+											<li><a href="#">Takı Seti</a></li>
+											<li><a href="#">Diğer Altın, Takı, Saat Ürünü </a></li>
+										</ul>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Ayakkabı, Çanta</h3></li>
+											<li><a href="#">Ayakkabı</a></li>
+											<li><a href="#">Ayakkabı Bakımı</a></li>
+											<li><a href="#">Çanta</a></li>
+											<li><a href="#">Çanta, Valiz Aksesuarları </a></li>
+											<li><a href="#">Valiz</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Düğün, Parti, Organizasyon</h3></li>
+											<li><a href="#">Düğün</a></li>
+											<li><a href="#">Kına Gecesi</a></li>
+											<li><a href="#">Söz, Nişan</a></li>
+										</ul>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Saat, Gözlük</h3></li>
+											<li><a href="#">Cep Saati</a></li>
+											<li><a href="#">Güneş Gözlüğü</a></li>
+											<li><a href="#">Kol Saati</a></li>	
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Spor Giyim</h3></li>
+											<li><a href="#">Eşofman</a></li>
+											<li><a href="#">Spor Ayakkabı</a></li>
+											<li><a href="#">Spor Şort</a></li>
+											<li><a href="#">Forma</a></li>
+											<li><a href="#">Sweatshirt</a></li>
+										</ul>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Çocuk Ürünleri</h3></li>
+											<li><a href="#">Çocuk Aksesuar</a></li>
+											<li><a href="#">Çocuk Ayakkabı</a></li>
+											<li><a href="#">Çocuk Giyim</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Kozmetik, Kişisel Bakım	</a></li>
+						<li><a href="#">Anne, Bebek, Oyuncak</a></li>
+					</ul>
+				</div>
+				<!-- /category nav -->
+
+				<!-- menu nav -->
+				<div class="menu-nav">
+					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
+					<ul class="menu-list">
+						<li><a href="index.html">ANASAYFA</a></li>
+						<li><a href="market.html">MARKET</a></li>
+						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Erkek <i class="fa fa-caret-down"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Erkek Aksesuar	</h3></li>
+											<li><a href="#">Anahtarlık</a></li>
+											<li><a href="#">Atkı, Fular</a></li>
+											<li><a href="#">Kemer</a></li>
+											<li><a href="#">Şapka, Bere</a></li>
+											<li><a href="#">Kravat, Papyon</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Erkek Ayakkabı</h3></li>
+											<li><a href="#">Erkek Bot</a></li>
+											<li><a href="#">Erkek Günlük Ayakkabı</a></li>
+											<li><a href="#">Erkek Sneaker</a></li>
+											<li><a href="#">Erkek Spor Ayakkabı</a></li>
+											<li><a href="#">Erkek Terlik, Sandalet</a></li>
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									<div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Erkek Giyim</h3></li>
+											<li><a href="#">Ceket</a></li>
+											<li><a href="#">Gömlek</a></li>
+											<li><a href="#">İç Giyim</a></li>
+											<li><a href="#">Kot Pantolon</a></li>
+											<li><a href="#">Sweatshirt</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row hidden-sm hidden-xs">
+									<div class="col-md-12">
+										<hr>
+										<a class="banner banner-1" href="#">
+											<img src="./img/banner05.jpg" alt="">
+											<div class="banner-caption text-center">
+												<h2 class="white-color">YENİ ÜRÜNLER</h2>
+												<h3 class="white-color font-weak">EN İYİSİ, EN UCUZA !!!</h3>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown mega-dropdown full-width"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">KADIN <i class="fa fa-caret-down"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="hidden-sm hidden-xs">
+											<a class="banner banner-1" href="#">
+												<img src="./img/banner06.jpg" alt="">
+												<div class="banner-caption text-center">
+													<h3 class="white-color text-uppercase">Spor Ayakkabı</h3>
+												</div>
+											</a>
+											<hr>
+										</div>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Ayakkabı</h3></li>
+											<li><a href="#">Kadın Babet</a></li>
+											<li><a href="#">Espadril</a></li>
+											<li><a href="#">Kadın Günlük Ayakkabı</a></li>
+											<li><a href="#">Kadın Spor Ayakkabı</a></li>
+											<li><a href="#">Topuklu Ayakkabı</a></li>
+										</ul>
+									</div>
+									<div class="col-md-3">
+										<div class="hidden-sm hidden-xs">
+											<a class="banner banner-1" href="#">
+												<img src="./img/banner07.jpg" alt="">
+												<div class="banner-caption text-center">
+													<h3 class="white-color text-uppercase">Çanta</h3>
+												</div>
+											</a>
+										</div>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Çanta & Cüzdan</h3></li>
+											<li><a href="#">Kadın Cüzdan</a></li>
+											<li><a href="#">Kadın Sırt Çantası</a></li>
+											<li><a href="#">Omuz Çantası</a></li>
+											<li><a href="#">Kadın Postacı Çantası</a></li>
+											<li><a href="#">Kadın El Çantası</a></li>
+										</ul>
+									</div>
+									<div class="col-md-3">
+										<div class="hidden-sm hidden-xs">
+											<a class="banner banner-1" href="#">
+												<img src="./img/banner08.jpg" alt="">
+												<div class="banner-caption text-center">
+													<h3 class="white-color text-uppercase">SAAT</h3>
+												</div>
+											</a>
+										</div>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Aksesuar</h3></li>
+											<li><a href="#">Saat</a></li>
+											<li><a href="#">Şapka, Bere</a></li>
+											<li><a href="#">Eldiven</a></li>
+											<li><a href="#">Atkı, Fular</a></li>
+											<li><a href="#">Anahtarlık</a></li>
+										</ul>
+									</div>
+									<div class="col-md-3">
+										<div class="hidden-sm hidden-xs">
+											<a class="banner banner-1" href="#">
+												<img src="./img/banner09.jpg" alt="">
+												<div class="banner-caption text-center">
+													<h3 class="white-color text-uppercase">Sneaker</h3>
+												</div>
+											</a>
+										</div>
+										<hr>
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">Kadın Giyim</h3></li>
+											<li><a href="#">Elbise</a></li>
+											<li><a href="#">Gömlek, Bluz</a></li>
+											<li><a href="#">İç Giyim</a></li>
+											<li><a href="#">Plaj Giyim</a></li>
+											<li><a href="#">Tesettür Giyim</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- menu nav -->
+			</div>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /NAVIGATION -->
+
+	<!-- BREADCRUMB -->
+	<div id="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Anasayfa</a></li>
+				<li><a href="#">Market</a></li>
+				<li class="active">Telefon Karşılaştırma</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /BREADCRUMB -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!--  Product Details -->
+				
+                <div class="comparisontable">
+
+	<ul class="row">
+		<li class="legend">Telefon Karşılaştırması</li>
+        <li><img src="./img/Samsung-Galaxy-A20e.jpg" /><br />Samsung Galaxy A20e</li>
+		<li><img src="./img/Huawei-Enjoy-9s.jpeg" /><br />Huawei Enjoy 9s</li>
+		<li><img src="./img/Asus-ZenFone-Live-L2.jpg" /><br />Asus ZenFone Live L2</li>
+        <li><img src="./img/Apple-iPhone-Xr-3.jpg" /><br />Apple iPhone XR 3</li>
+	</ul>
+	
+	<ul class="row">
+		<li class="legend">Ekran Boyutu</li>
+		<li>5.8"</li>
+		<li>6.21"</li>
+		<li>5.5"</li>
+		<li>6.1"</li>
+	</ul>
+	
+	<ul class="row">
+		<li class="legend">Ekran Çözünürlüğü</li>
+		<li>720 x 1560 Piksel</li>
+		<li>1080 x 2340 Piksel</li>
+		<li>720 x 1440 Piksel</li>
+		<li>828 x 1792 Piksel</li>
+	</ul>
+	
+    	<ul class="row">
+		<li class="legend">Anakart</li>
+		<li>Samsung Exynos 7 Octa 7884</li>
+		<li>Hisilicon Kirin 710</li>
+		<li>Qualcomm Snapdragon 425</li>
+		<li>Apple A12 Bionic</li>
+	</ul>
+    
+	<ul class="row">
+		<li class="legend">Dahili Hafıza</li>
+		<li>32 GB</li>
+		<li>64 / 128 GB</li>
+		<li>16 / 32 GB</li>
+		<li>64 / 128 /256 GB</li>
+	</ul>
+	
+		<ul class="row">
+		<li class="legend">Ram</li>
+		<li>3 GB</li>
+		<li>4 GB</li>
+		<li>2 GB</li>
+		<li>3 GB</li>
+	</ul>
+    
+    	<ul class="row">
+		<li class="legend">Batarya</li>
+		<li>3000 mAh</li>
+		<li>3400 mAh</li>
+		<li>3000 mAh</li>
+		<li>2150 mAh</li>
+	</ul>
+    
+    	<ul class="row">
+		<li class="legend">Arka Kamera</li>
+		<li>13 MP (f/1.9)</li>
+		<li>24 MP (f/1.8)</li>
+		<li>13 MP (f/2.0)</li>
+		<li>12 MP (f/1.8)</li>
+	</ul>
+    
+        	<ul class="row">
+		<li class="legend">Ön Kamera</li>
+		<li>8 MP (f/2.0)</li>
+		<li>8 MP (f/2.0)</li>
+		<li>5 MP (f/2.4)</li>
+		<li>7 MP (f/2.2)</li>
+	</ul>
+    
+	<ul class="row">
+		<li class="legend"></li>
+		<li><a href="#" class="calltoaction" rel="nofollow">Satın Al</a></li>
+		<li><a href="#" class="calltoaction" rel="nofollow">Satın Al</a></li>
+		<li><a href="#" class="calltoaction" rel="nofollow">Satın Al</a></li>
+		<li><a href="#" class="calltoaction" rel="nofollow">Satın Al</a></li>
+	</ul>
+
+</div><br></br><hr><br>
+                
+                
+									<div class="row">
+										<div class="col-md-6">
+											<div class="product-reviews">
+												<div class="single-review">
+													<div class="review-heading">
+														<div><a href="#"><i class="fa fa-user-o"></i> Misafir</a></div>
+														<div><a href="#"><i class="fa fa-clock-o"></i> 16 Mart 2019 / 8:00 PM</a></div>
+														<div class="review-rating pull-right">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o empty"></i>
+														</div>
+													</div>
+													<div class="review-body">
+														<p>Dıs tasarimi ve dayanikliligi konusunda gayet basarili ancak kullanima basladigim andan itibaren isletiminde yavaslik soz konusu. Batarya dayanimi cok iyi. on kamerasinin iyi oldugu pazarlamasi yapilnasina ragmen bu konuda yeterli kalmamaktadir. Ancak akilli telefon kullanimi cok az olan benim gibi insanlar icin kasasi tasarimi ve dayanililigi konusunda onerebilirim .uzun yilladir kullanilabilecek bir telefon. Ama ama ama fiyat performansi harika!!</p>
+													</div>
+												</div>
+
+												<div class="single-review">
+													<div class="review-heading">
+														<div><a href="#"><i class="fa fa-user-o"></i> Serdar Alka</a></div>
+														<div><a href="#"><i class="fa fa-clock-o"></i> 27 Ocak 2019 / 4:32 PM</a></div>
+														<div class="review-rating pull-right">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o empty"></i>
+														</div>
+													</div>
+													<div class="review-body">
+														<p>Telefonun küçük, kullanışlı, çift hat olması ve harici bellek kullanılması olumlu yönleridir.
+Fakat bir hat ile konuşurken ikinci hatta gelen aramalarda ulaşılmıyor görünmesi,
+Gün geçtikçe sarjın kullanım süresinin kısalması,
+Telefonun gözle görülür şekilde yavaşlaması,
+Kameranın güneş altında çok az görünmesi telefonun olumsuz yönleridir.</p>
+													</div>
+												</div>
+
+												<div class="single-review">
+													<div class="review-heading">
+														<div><a href="#"><i class="fa fa-user-o"></i> Mehmet Hangarcı</a></div>
+														<div><a href="#"><i class="fa fa-clock-o"></i> 27 DEC 2017 / 8:0 PM</a></div>
+														<div class="review-rating pull-right">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o empty"></i>
+														</div>
+													</div>
+													<div class="review-body">
+														<p>2 aydır bu telefonu kullanan biri olarak sizin için ufak bir inceleme yazacağım.
+
+Artılar:
+1. Hızlı performans.
+2. Donma ya da yavaşlama yok.
+3. Isınma sorunu yok.
+4. Yoğun ve ağır kullanımda bile uzun batarya ömrü, 1.5 – 2 gün.
+5. Hızlı şarj özelliği, telefonun tamamen dolması 1.5 saat sürüyor.
+6. Kamerası iyi.
+7. Suya ve toza dirençli olması.
+8. Type C dönüştürülebilir şarj kablosu.
+9. Basit, sade ve bir o kadar da güzel görünen kaliteli dizaynı.</p>
+													</div>
+												</div>
+
+												<ul class="reviews-pages">
+													<li class="active">1</li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<h4 class="text-uppercase">Sende Yorumunu Yaz</h4>
+											<p>E-Mail Adresinizi Yazarak Bu Post'u Takip Edebilirsiniz...</p>
+											<form class="review-form">
+												<div class="form-group">
+													<input class="input" type="text" placeholder="İsminiz" />
+												</div>
+												<div class="form-group">
+													<input class="input" type="email" placeholder="Email Adresiniz" />
+												</div>
+												<div class="form-group">
+													<textarea class="input" placeholder="Yorumunuz"></textarea>
+												</div>
+												<div class="form-group">
+													<div class="input-rating">
+														<strong class="text-uppercase">Oylama: </strong>
+														<div class="stars">
+															<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+															<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+															<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+															<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+															<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+														</div>
+													</div>
+												</div>
+												<button class="primary-btn">Gönder</button>
+											</form>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- /Product Details -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+	
+			<!-- /row -->
+			<hr>
+			<!-- row -->
+
+		<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+					<b>
+                    Merve Uzun – 201213171065<br>
+					Sibel Uysal 201413172053<br>
+                    Serdar ALKA - 201513172905<br>
+					İbrahim Gündüz – 201513172032<br>
+					Enes Tuğrul ADA 201513172043<br></b><br>
+
+                        </script> </i>
+					
+					</div>
+					
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Kiþi kayýt</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Ad</label>
+    <input type="text" id="fname" name="firstname" placeholder="Adý">
+
+    <label for="lname">Soyad</label>
+    <input type="text" id="lname" name="lastname" placeholder="Soyadý">
+
+  <label for="lname">Telefon</label>
+    <input type="text" id="lname" name="lastname" placeholder="Telefon numarasý">
+    
+    <label for="country">Cinsiyet</label>
+    <select id="country" name="country">
+      <option value="australia">Erkek</option>
+      <option value="canada">Kadýn</option>
+    </select>
+
+    <label for="subject">Hakkýnda</label>
+    <textarea id="subject" name="subject" placeholder="Hakkýnda..." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

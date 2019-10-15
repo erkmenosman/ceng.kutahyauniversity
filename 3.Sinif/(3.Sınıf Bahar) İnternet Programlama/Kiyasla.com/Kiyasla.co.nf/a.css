@@ -1,0 +1,102 @@
+div.comparisontable{
+  display: flex;
+  flex-direction: column;
+}
+
+div.comparisontable img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+div.comparisontable ul.row{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+div.comparisontable ul.row li{
+  background: #ffffff;
+  flex: 1;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+div.comparisontable ul.row li.legend{
+ 	background: #f8694a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  border-bottom: 1px solid white;
+}
+
+div.comparisontable ul.row li:last-of-type{
+}
+
+/* very first row */
+div.comparisontable ul.row:first-of-type li{
+  text-align: center;
+}
+
+/* very last row */
+div.comparisontable ul.row:last-of-type li{
+  text-align: center;
+  border-bottom: none;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+}
+
+div.comparisontable a.calltoaction{
+  color: white;
+  background: #f8694a;
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: .1em auto;
+}
+
+div.comparisontable a.calltoaction:hover{
+  background: #d11212;
+}
+
+
+/* first and last cell within legend column */
+div.comparisontable ul.row:first-of-type li.legend.legend,
+div.comparisontable ul.row:last-of-type li.legend{
+  background: transparent;
+  box-shadow: none;
+}
+
+@media screen and (max-width:650px){
+  
+  div.comparisontable ul.row{
+    flex-direction: column;
+  }
+  
+  div.comparisontable img{
+    width: auto;
+    height: auto;
+  }
+  
+  div.comparisontable ul.row li{
+    margin-right: 0;
+		flex: auto;
+    width: auto;
+  }
+  
+  /* first and last cell within legend column */
+  div.comparisontable ul.row:first-of-type li.legend.legend,
+  div.comparisontable ul.row:last-of-type li.legend{
+    display: none;
+  }
+  
+  div.comparisontable ul.row li.legend{
+    width: auto;
+  }
+}

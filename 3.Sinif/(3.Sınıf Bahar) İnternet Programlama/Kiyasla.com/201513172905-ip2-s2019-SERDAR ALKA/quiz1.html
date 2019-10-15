@@ -1,0 +1,63 @@
+<title>Quiz</title>
+<style type="text/css">
+.ad {	font-family: "Times New Roman", cursive;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: 500;
+	color: #140;
+	text-decoration: line-through;
+}
+.soyad {	font-family: "Times New Roman", Times, serif;
+	font-size: 14pt;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #340;
+}
+</style>
+</head>
+
+<body>
+<table width="200" height="115" border="1">
+  <tr>
+    <td height="59">ADINIZ     :</td>
+    <td><form id="form5" name="form5" method="post" action="">
+      <label for="ad"></label>
+      <input type="type" class="ad"="text" name="ad" id="ad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >SOYADINIZ :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input type="type" class="soyad" ="text" name="soyad" id="soyad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >ÖGRENCI NUMARASI :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input type="type" class="soyad" ="text" name="soyad" id="soyad" />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >TC NUMARASI :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input maxlength="50" type="type" class="soyad" ="text" name="soyad" id="soyad"
+      />
+    </form></td>
+  </tr>
+  <tr>
+    <td height="48" >rastgele sayi :</td>
+    <td><form id="form6" name="form6" method="post" action="">
+      <input maxlength="50" type="type" class="soyad" ="text" name="soyad" id="soyad"
+      />
+    </form></td>
+  </tr>
+  
+</table>
+<input type="submit" name="kaydet" id="kaydet" value="sayi üret" style="background-color:#300"  />
+<script>
+  alert(Math.floor(Math.random() * 100000000000000000000000000000000000000000000000001)); // 0 ve 100 arasinda sayi üretir.
+</script>
+
+<input type="submit" name="kaydet" id="kaydet" value="karsilastir" style="background-color:#300"  />
+</body>
+</html>

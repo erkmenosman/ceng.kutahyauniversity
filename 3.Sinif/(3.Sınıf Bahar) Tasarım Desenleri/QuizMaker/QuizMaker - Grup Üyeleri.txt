@@ -1,0 +1,14 @@
+201413172052 Hande Aras  
+201413172053 Sibel Uysal
+201413172063 Leyla Tutu
+201413172039 Selimhan Sayin
+201413172064 Mahmut Semiz  
+201513172032 Ibrahim Gündüz
+201513172905 Serdar Alka
+
+Projede Mysql veritabani kullandik.
+MVP yapisina uygun olarak tasarladik. Ayrica formlar singleton tasarim desenine göre yanlizca bir kere açilmaktadir.
+Zorluk derecesi kisminda strateji tasarim deseni uygulanmistir.
+Ayrica MDI form mantigi çerçevesinde child formlar, main form içindeki panelde açilmaktadir.
+Program projeye uygun çalisir vaziyetdedir.Tamamen kendimiz ugrasip yapmis olup,hiç kimseden yardim almadik.
+Böyle bir projenin bize kattigi çok sey oldu. Çok tesekkür ederiz hocam :)

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<title>Hesap Makinesi</title>
+</head>
+<body>
+
+<!-- Burak AVCI - 090202395-->
+
+
+<form name="hesapmakinesi">
+
+<!--Tablo Boyutu-->
+<table align="center" border="2" cellspacing="4" cellpadding="2" bordercolor="black">
+
+<!--Text Kısmı-->
+<tr>
+<td bgcolor="red"><input type="text" name="Textbox" size="40"></td>
+</tr>
+
+<!--Satır 1-->
+<tr>
+<td align="center">
+<input type="button" value="Temizle" onClick="temizle()">
+<input type="button" value="Kapat" onClick="pencerekapat()"></td>
+</tr>
+
+<!--Satır 2-->
+<tr>
+<td align="center">
+<input type="button" value=" + " onClick="Toplama()">
+<input type="button" value="1" size="20" onClick="bir()">
+<input type="button" value="2" size="20" onClick="iki()">
+<input type="button" value="3" size="20" onClick="uc()">
+</td>
+</tr>
+
+
+<!--Satır 3-->
+<tr>
+<td align="center">
+<input type="button" value=" - " onClick="Cikarma()">
+<input type="button" value="4" size="20" onClick="dort()">
+<input type="button" value="5" size="20" onClick="bes()">
+<input type="button" value="6" size="20" onClick="alti()">
+</td>
+</tr>
+
+
+<!--Satır 4-->
+<tr>
+<td align="center" >
+<input type="button" value=" * " onClick="Carpma()">
+<input type="button" value="7" size="20" onClick="yedi()">
+<input type="button" value="8" size="20" onClick="sekiz()">
+<input type="button" value="9" size="20" onClick="dokuz()">
+</td>
+
+
+<!--Satır 5-->
+<tr>
+<td align="center">
+<input type="button" value=" / " onClick="Bolme()">
+<input type="button" value="0" onClick="sifir()">
+<input type="button" value=" . " onClick="ondalik()">
+<input type="button" value=" = " onClick="esittir()"> </td>
+</tr>
+
+</table>
+</form>
+
+<center><b>Merve UZUN - 201213171065<b></center>
+
+<script language="javascript">
+var A;
+var B;
+var C;
+var D;
+
+function bir()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "1";
+}
+
+function iki()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "2";
+}
+
+function uc()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "3";
+}
+
+function dort()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "4";
+}
+
+function bes()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "5";
+}
+
+function alti()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "6";
+}
+
+function yedi()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "7";
+}
+
+function sekiz()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "8";
+}
+
+function dokuz()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "9";
+}
+
+function sifir()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + "0";
+}
+
+function ondalik()
+{
+document.hesapmakinesi.Textbox.value=document.hesapmakinesi.Textbox.value + ".";
+}
+
+function temizle()
+{
+document.hesapmakinesi.Textbox.value="";
+}
+
+function pencerekapat()
+{
+window.close();
+}
+
+function Toplama()
+{
+A= parseFloat(document.hesapmakinesi.Textbox.value);
+document.hesapmakinesi.Textbox.value="";
+D=1;
+}
+
+function Cikarma()
+{
+A= parseFloat(document.hesapmakinesi.Textbox.value);
+document.hesapmakinesi.Textbox.value="";
+D=2;
+}
+
+function Carpma()
+{
+A= parseFloat(document.hesapmakinesi.Textbox.value);
+document.hesapmakinesi.Textbox.value="";
+D=3;
+}
+
+function Bolme()
+{
+A= parseFloat(document.hesapmakinesi.Textbox.value);
+document.hesapmakinesi.Textbox.value="";
+D=4;
+}
+
+function esittir()
+{
+B= parseFloat(document.hesapmakinesi.Textbox.value);
+document.hesapmakinesi.Textbox.value="";
+    if(D=="1")
+    {
+    C=toToplama(A,B);
+    document.hesapmakinesi.Textbox.value=C;
+    }
+    if(D=="2")
+    {
+    C=toCikarma(A,B);
+    document.hesapmakinesi.Textbox.value=C;
+    }
+    if(D=="3")
+    {
+    C=toCarpma(A,B);
+    document.hesapmakinesi.Textbox.value=C;
+    }
+    if(D=="4")
+    {
+    C=toBolme(A,B);
+    document.hesapmakinesi.Textbox.value=C;
+    }
+}
+
+function toToplama(sayiA ,sayiB)
+{
+return (sayiA+sayiB)
+}
+
+function toCikarma(sayiA ,sayiB)
+{
+return (sayiA-sayiB)
+}
+
+function toCarpma(sayiA ,sayiB)
+{
+return (sayiA * sayiB)
+}
+
+function toBolme(sayiA ,sayiB)
+{
+return (sayiA/sayiB)
+}
+
+</script>
+</body>
+</html>

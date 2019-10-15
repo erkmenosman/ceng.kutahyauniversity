@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>form</title>
+    </head>
+    <body>
+            <form action="http://moodle.dpu.edu.tr" method="get">
+                <table border="2">
+            <tr>
+                <td><label for="ad">Ad</label></td>
+                <td colspan="1"><input type="text" name="ad" id="ad" required></td>
+            </tr>
+            
+            <tr>
+                <td>Soyad</td>
+                <td colspan="1"><input type="text" name="soyad" id="soyad" required></td>
+            </tr>
+            
+            <tr>
+                <td>Yaþ</td>
+                <td><input type="number" name="yas" id="yas" min="0" max="120" placeholder="Yaþýnýzý girin"></td>
+            </tr>
+            
+            <tr>
+                <td>Resim Ekle</td>
+                <td><input type="file" name="resim" id="resim"></td>
+            </tr>
+            
+            <tr>
+                <td>TC No</td>
+                <td><input type="text" name="tc" id="tc" maxlength="11"></td>
+            </tr>
+            
+            <tr>
+                <td>Cinsiyet</td>
+                <td>K<input type="radio" name="cinsiyet" id="cinsiyet" value="K" checked>
+                E<input type="radio" name="cinsiyet" id="cinsiyet1" value="E"></td>
+            </tr>
+            
+            <tr>
+                <td>Yabancý Diller</td>
+                <td>Ýngilizce<input type ="checkbox" name="dil" id="dil" checked value="ingilizce">
+                    Fransýzca<input type="checkbox" name="dil1" id="dil1" value="fransýzca">       
+                    Japonca<input type="checkbox" name="dil2" id="dil2" value="japonca">       
+                           </td>
+                
+                <tr>
+                    <td>Giriþ</td>
+                    <td>
+                        <textarea name="gorus" id="gorus" placeholder="Görüþ Girin"></textarea>
+                    </td>    
+                </tr>
+            </tr>
+            
+                        <tr>
+            <td colspan="2">
+            <input type="submit" name="kaydet" id="kaydet" value="KAYDET">
+            <input type="reset" name="sil" id="sil" value="TEMÝZLE">
+ 
+            </td>
+            </tr>
+       
+        </table>
+        </form>
+    </body>
+</html>

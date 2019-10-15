@@ -1,0 +1,28 @@
+ <html><head><title>HESAP MAKINESI</title>
+	<script type="text/javascript">
+	function topla()
+	{  s1=document.getElementById("textbox1").value; 
+	s2=document.getElementById("textbox2").value;
+	textboxresult.value=parseInt(s1)+parseInt(s2); }
+	function   cikar(){  s1=document.getElementById("textbox1").value;  
+	s2=document.getElementById("textbox2").value;
+	textboxresult.value=parseInt(s1)-parseInt(s2);}
+	function   carp(){  s1=document.getElementById("textbox1").value;  
+	s2=document.getElementById("textbox2").value;
+	textboxresult.value=parseInt(s1)*parseInt(s2);}
+	function   bol(){  s1=document.getElementById("textbox1").value;   
+	s2=document.getElementById("textbox2").value; if(s2==0) 
+	alert("donomioater cant be ,change the value") 
+	else textboxresult.value=parseInt(s1)/parseInt(s2);}</script>
+    </head>
+    <body>
+	<h2>Basit Hesap Makinesi</h2>
+	<input  type="text"  id="textbox1" ></br>
+	<input  type="text"  id="textbox2" ></br>
+	<input type="button"  id="buttonadd" value="+" onclick="topla()">
+	<input type="button"  id="buttonasub" value="-" onclick=" cikar()">
+	<input type="button"  id="buttonamul" value="*" onclick="carp()">
+	<input type="button"  id="buttondiv" value="/" onclick="bol()"></br>
+	<input  type="text"  id="textboxresult" ></br>
+	</body>
+    </html>
